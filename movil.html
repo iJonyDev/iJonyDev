@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Elena Sol | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4a373",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#121212",
+                        "card-dark": "#1e1e1e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-24">
+        <!-- Header / Top Bar -->
+        <div
+            class="flex items-center bg-background-light dark:bg-background-dark p-4 justify-between sticky top-0 z-20 backdrop-blur-md bg-opacity-80 dark:bg-opacity-80">
+            <div
+                class="text-slate-900 dark:text-slate-100 flex size-10 shrink-0 items-center justify-start cursor-pointer">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <h2
+                class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">
+                Elena Sol</h2>
+            <div class="flex w-10 items-center justify-end">
+                <button
+                    class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 bg-transparent text-slate-900 dark:text-slate-100">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+            </div>
+        </div>
+        <!-- Hero Section -->
+        <div class="flex p-6 @container">
+            <div class="flex w-full flex-col gap-6 items-center">
+                <div class="flex gap-6 flex-col items-center">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-primary/30 rounded-full blur-xl"></div>
+                        <div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-36 w-36 border-2 border-primary/20 shadow-2xl"
+                            data-alt="Professional portrait of Elena Sol, a brand designer"
+                            style='background-image: url("docs/FotoPerfil.png");'>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-1">
+                        <p
+                            class="text-slate-900 dark:text-slate-100 text-3xl font-bold leading-tight tracking-tight text-center">
+                            Elena Sol</p>
+                        <p class="text-primary text-base font-medium leading-normal text-center">Brand Designer &amp;
+                            Visual Storyteller</p>
+                        <p
+                            class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal text-center flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">location_on</span> Madrid, Spain
+                        </p>
+                    </div>
+                </div>
+                <button
+                    class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide w-full max-w-[320px] transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                    <span class="truncate">Hire Me</span>
+                </button>
+            </div>
+        </div>
+        <!-- Stats Section -->
+        <div class="flex flex-nowrap overflow-x-auto no-scrollbar gap-4 p-4">
+            <div
+                class="flex min-w-[120px] flex-1 flex-col gap-2 rounded-lg p-5 bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-primary/10">
+                <p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">Projects</p>
+                <p class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl font-bold leading-tight">120+</p>
+            </div>
+            <div
+                class="flex min-w-[120px] flex-1 flex-col gap-2 rounded-lg p-5 bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-primary/10">
+                <p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">Reach</p>
+                <p class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl font-bold leading-tight">50K+</p>
+            </div>
+            <div
+                class="flex min-w-[120px] flex-1 flex-col gap-2 rounded-lg p-5 bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-primary/10">
+                <p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">Years</p>
+                <p class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl font-bold leading-tight">8+</p>
+            </div>
+        </div>
+        <!-- Recent Stories Gallery -->
+        <div class="px-4 pt-8 pb-4 flex items-baseline justify-between">
+            <h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">Recent
+                Stories</h2>
+            <a class="text-primary text-sm font-medium" href="#">View all</a>
+        </div>
+        <div class="flex flex-col gap-6 px-4">
+            <!-- Card 1 -->
+            <div
+                class="group relative flex flex-col gap-3 rounded-xl overflow-hidden bg-slate-100 dark:bg-card-dark transition-all">
+                <div class="aspect-[16/9] w-full bg-cover bg-center overflow-hidden"
+                    data-alt="Modern minimalist architectural building detail"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9tXGT9tBLWnRPeMA-p_5Iif7pQDtkBrEM37iHZ-wABokbwIso8AIODlQoLUBEgqq6anoSkcu8B3eccu3WWJUTdgk2__7_Bs-0voKnOsyvp7HGeO9n0UCNmN1MWv5L0x2rJdVBoL2hqgTCmUBAZxS8nBKY_1JPlk4ANL-byHE3N8eZuysxVlPRR3XcHWU7_5XFIjW0uUhWwHyBdQo2iKwqDo1YBCzJXfi0X9NmmErDTKd3ne6pkDftrDiTdPwm7o62pV3EhEFi3IE");'>
+                </div>
+                <div class="p-4 pt-1">
+                    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Architecture</p>
+                    <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Minimalist Structures
+                    </h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 line-clamp-2">Exploring the intersection
+                        of brutalist design and modern sustainability in urban environments.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+                class="group relative flex flex-col gap-3 rounded-xl overflow-hidden bg-slate-100 dark:bg-card-dark transition-all">
+                <div class="aspect-[16/9] w-full bg-cover bg-center overflow-hidden"
+                    data-alt="Digital interface design with glowing elements"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4YZFgY-B5399ldKXGUEi7sSOCXlePqPeA--H1MPzqibgyhtdvwQbM6Dpax3ESTj_FyaAY9EKqY5TNQBu3xdOwD2Oueq1JQj77DTmBlEDcXkfTsV4Z2sfRMt4UROXddpD1zPSUOc-nVe5nvuJD2NJy0Upu7F1nv2UKnPOI61y80VQGRqjrBW1Am5aQxVA385nYoTYxHiNkiNvgZF-zf00w-il0LKAQ_9Au_FSxY4JEoG0cVdomQucWiYELN7O67iokA4PaPR12-lg");'>
+                </div>
+                <div class="p-4 pt-1">
+                    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Digital Design</p>
+                    <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Future Interfaces
+                    </h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 line-clamp-2">A conceptual deep-dive into
+                        the next generation of spatial computing and user experience.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+                class="group relative flex flex-col gap-3 rounded-xl overflow-hidden bg-slate-100 dark:bg-card-dark transition-all">
+                <div class="aspect-[16/9] w-full bg-cover bg-center overflow-hidden"
+                    data-alt="Clean corporate branding guidelines on paper"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1-0CcDLJcTz-wPPDU-1NUfhztGef36tySiGwXIhk7djTe2HfwqPXX_dTy6NIwCUjHviup-9r9YLiKKdwzKGR6tKKVDYE-aBP-_nq_vvajS79rWgjnMuxX88Fvixq6v39Ud1FpXpbMFWNish9Fk-4m85rehI6SnHKS0oVbsqV-uGPUSyuoNrt2nRK3trtoAWnihDw5hLlCunG4WQMmB2E31NzSbhbgR0QOVodzlWnheEofZwfd88itrx8AtpGzO936JZoQBENtjnQ");'>
+                </div>
+                <div class="p-4 pt-1">
+                    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Branding</p>
+                    <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Identity Systems</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2 line-clamp-2">Crafting cohesive visual
+                        languages for tech startups looking to redefine their market presence.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <div
+            class="fixed bottom-0 left-0 right-0 z-50 bg-slate-100 dark:bg-card-dark/95 backdrop-blur-lg border-t border-slate-200 dark:border-primary/10 px-6 pb-6 pt-3 shadow-2xl">
+            <div class="flex items-center justify-between max-w-md mx-auto">
+                <a class="flex flex-col items-center gap-1 text-primary" href="#">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+                    <span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <span class="text-[10px] font-bold uppercase tracking-tighter">Works</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+                    <span class="material-symbols-outlined">person</span>
+                    <span class="text-[10px] font-bold uppercase tracking-tighter">About</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+                    <span class="material-symbols-outlined">mail</span>
+                    <span class="text-[10px] font-bold uppercase tracking-tighter">Inbox</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

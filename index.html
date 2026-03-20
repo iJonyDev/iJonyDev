@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Quishpe | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Scripts -->
+    <script defer src="js/bootstrap.bundle.js"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body class="font-display bg-background text-body overflow-hidden">
+    <!-- Root wrapper: Row on Desktop/Tablet, Column on Mobile -->
+    <div class="d-flex flex-column flex-md-row min-vh-100 w-100 position-relative">
+
+        <!-- ========================================== -->
+        <!-- 1. DESKTOP SIDEBAR (>= 1200px)             -->
+        <!-- ========================================== -->
+        <aside
+            class="sidebar-desktop d-none d-xl-flex flex-column align-items-center py-4 z-3 bg-header border-end border-nav backdrop-blur flex-shrink-0">
+            <div class="mb-5">
+                <div class="bg-primary text-dark rounded-3 d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px;">
+                    <span class="fw-bold fs-5">ES</span>
+                </div>
+            </div>
+            <nav class="d-flex flex-column gap-5 flex-grow-1">
+                <a class="nav-item text-primary position-relative d-flex justify-content-center" href="#" title="Works">
+                    <i class="bi bi-grid-1x2-fill fs-5"></i>
+                </a>
+                <a class="nav-item text-muted position-relative d-flex justify-content-center" href="#" title="Profile">
+                    <i class="bi bi-person-fill fs-5"></i>
+                </a>
+                <a class="nav-item text-muted position-relative d-flex justify-content-center" href="#" title="Studio">
+                    <i class="bi bi-building fs-5"></i>
+                </a>
+                <a class="nav-item text-muted position-relative d-flex justify-content-center" href="#" title="Contact">
+                    <i class="bi bi-envelope-fill fs-5"></i>
+                </a>
+            </nav>
+            <div class="mt-auto">
+                <button class="btn btn-primary rounded-3 d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-plus-lg"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ========================================== -->
+        <!-- 2. TABLET SIDEBAR (768px - 1199px)         -->
+        <!-- ========================================== -->
+        <aside
+            class="sidebar-tablet d-none d-md-flex d-xl-none flex-column justify-content-between p-4 z-3 bg-header border-end border-nav backdrop-blur flex-shrink-0">
+            <div class="d-flex flex-column gap-4">
+                <!-- Profile -->
+                <div class="d-flex flex-column gap-3">
+                    <div class="position-relative" style="width: 64px; height: 64px;">
+                        <div
+                            class="position-absolute align-self-center w-100 h-100 bg-primary opacity-25 rounded-circle blur-xl">
+                        </div>
+                        <img src="docs/FotoPerfil.png" alt="Jonathan Quishpe"
+                            class="position-relative w-100 h-100 rounded-circle object-fit-cover border border-2 border-primary"
+                            style="border-color: rgba(212, 163, 115, 0.3) !important;">
+                    </div>
+                    <div>
+                        <h1 class="fs-5 fw-bold m-0">Jonathan Quishpe</h1>
+                        <p class="text-primary"
+                            style="font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; margin: 0; font-weight: 600;">
+                            Architect & Designer</p>
+                    </div>
+                </div>
+                <!-- Links -->
+                <nav class="d-flex flex-column gap-2">
+                    <a class="d-flex align-items-center gap-3 px-3 py-2 rounded-3 bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 text-decoration-none fw-semibold"
+                        style="font-size: 0.875rem;" href="#">
+                        <i class="bi bi-grid-1x2-fill"></i> Projects
+                    </a>
+                    <a class="nav-item d-flex align-items-center gap-3 px-3 py-2 rounded-3 text-muted text-decoration-none fw-medium"
+                        style="font-size: 0.875rem;" href="#">
+                        <i class="bi bi-person-fill"></i> About
+                    </a>
+                    <a class="nav-item d-flex align-items-center gap-3 px-3 py-2 rounded-3 text-muted text-decoration-none fw-medium"
+                        style="font-size: 0.875rem;" href="#">
+                        <i class="bi bi-building"></i> Process
+                    </a>
+                    <a class="nav-item d-flex align-items-center gap-3 px-3 py-2 rounded-3 text-muted text-decoration-none fw-medium"
+                        style="font-size: 0.875rem;" href="#">
+                        <i class="bi bi-envelope-fill"></i> Contact
+                    </a>
+                </nav>
+            </div>
+            <!-- CTA -->
+            <div class="bg-card p-3 rounded-4 border border-card mt-4">
+                <p class="text-muted mb-3" style="font-size: 0.75rem;">Available for high-impact design collaborations.
+                </p>
+                <button class="btn btn-primary w-100 fw-bold d-flex align-items-center justify-content-center gap-2"
+                    style="font-size: 0.875rem; padding-top: 0.625rem; padding-bottom: 0.625rem;">
+                    Hire Me <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ========================================== -->
+        <!-- 3. MAIN CONTENT AREA                       -->
+        <!-- ========================================== -->
+        <main class="flex-grow-1 overflow-y-auto custom-scrollbar position-relative" style="height: 100vh;">
+
+            <!-- Mobile Top Bar (< 768px) -->
+            <header
+                class="d-flex d-md-none align-items-center justify-content-between p-3 sticky-top bg-header backdrop-blur z-3 border-bottom border-nav">
+                <div class="d-flex align-items-center justify-content-start text-body" role="button">
+                    <i class="bi bi-list fs-3"></i>
+                </div>
+                <h2 class="text-body flex-grow-1 text-center m-0 fs-5 fw-bold">Jonathan Quishpe</h2>
+                <div class="d-flex align-items-center justify-content-end">
+                    <button
+                        class="theme-toggle-btn btn btn-link text-body p-0 d-flex align-items-center justify-content-center text-decoration-none"
+                        style="width: 40px; height: 40px;">
+                        <i class="bi bi-sun fs-4 theme-icon"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Desktop/Tablet Top Header (>= 768px) -->
+            <header
+                class="d-none d-md-flex align-items-center justify-content-between px-4 px-xl-5 py-4 border-bottom border-nav sticky-top bg-header backdrop-blur z-2">
+                <div class="d-flex align-items-center gap-3">
+                    <h2 class="fs-4 fw-bold m-0 d-xl-block d-none">Portfolio</h2>
+                    <h2 class="fs-4 fw-bold m-0 d-md-block d-xl-none">Jonathan Quishpe</h2>
+                    <span class="d-none d-xl-block bg-primary opacity-50" style="width: 2rem; height: 1px;"></span>
+                    <span class="d-none d-xl-block text-muted text-uppercase tracking-widest fw-medium"
+                        style="font-size: 0.8rem;">Visual Architect</span>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <button
+                        class="theme-toggle-btn btn btn-link text-body p-0 d-flex align-items-center justify-content-center text-decoration-none"
+                        style="width: 40px; height: 40px;">
+                        <i class="bi bi-sun fs-5 theme-icon"></i>
+                    </button>
+                    <button class="d-none d-xl-block btn btn-link text-muted text-decoration-none fw-semibold">The
+                        Process</button>
+                    <button
+                        class="d-none d-xl-block btn btn-primary rounded-pill fw-bold px-4 tracking-widest text-dark"
+                        style="font-size: 0.8rem; text-transform: uppercase;">Hire Me</button>
+                </div>
+            </header>
+
+            <div class="pb-5 mb-5 mb-md-0 d-flex flex-column gap-4 gap-md-5">
+
+                <!-- Hero Section (Mobile/Tablet centric, adapts to Desktop) -->
+                <section
+                    class="p-4 p-xl-5 d-flex flex-column flex-xl-row align-items-center justify-content-xl-between gap-4 mt-md-3">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-xl-start gap-4 flex-xl-grow-1 w-100 text-center text-xl-start">
+                        <!-- Shows only on mobile -->
+                        <div class="position-relative d-md-none">
+                            <div
+                                class="position-absolute start-0 top-0 w-100 h-100 rounded-circle bg-primary opacity-25 blur-xl shadow-glow">
+                            </div>
+                            <div class="position-relative rounded-circle border border-2 border-primary shadow-lg bg-image-cover aspect-square"
+                                style="border-color: rgba(212, 163, 115, 0.2) !important; width: 144px; height: 144px; background-image: url('docs/FotoPerfil.png');">
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2 mt-3 mt-xl-0">
+                            <!-- Desktop Hero Title -->
+                            <h1 class="d-none d-xl-block fw-black lh-sm tracking-tighter"
+                                style="font-size: 4.5rem; max-width: 600px;">
+                                Molding <span class="text-primary fst-italic">Digital</span> Space.
+                            </h1>
+                            <p class="d-none d-xl-block text-muted fs-5" style="max-width: 500px;">
+                                An interdisciplinary approach to visual design, bridging the gap between functional
+                                interfaces and architectural permanence.
+                            </p>
+
+                            <!-- Mobile/Tablet Hero Title -->
+                            <h1 class="d-xl-none fs-2 fw-bold text-body m-0">Jonathan Quishpe</h1>
+                            <p class="d-xl-none text-primary fs-6 fw-medium m-0">Brand Designer & Visual Storyteller</p>
+                            <p
+                                class="d-xl-none text-muted small m-0 flex-row d-flex align-items-center justify-content-center justify-content-xl-start gap-1">
+                                <i class="bi bi-geo-alt-fill fs-6"></i> Madrid, Spain
+                            </p>
+                        </div>
+
+                        <!-- CTA Mobile/Tablet -->
+                        <button
+                            class="d-xl-none btn btn-primary fw-bold text-dark w-100 rounded-3 py-2 shadow transition-transform px-4 mt-2"
+                            style="max-width: 320px; height: 48px;">
+                            Hire Me
+                        </button>
+                    </div>
+
+                    <!-- Decorative image on Desktop -->
+                    <div class="d-none d-xl-block w-100 bg-primary bg-opacity-10 rounded-4 overflow-hidden position-relative group"
+                        style="max-width: 380px;">
+                        <div class="bg-image-cover w-100 h-100 position-absolute"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoRme4BekpsuisZgO4Tvb-YU9tvTlrh8vVr9SwzVrfSOHErauVKuIQJQyjtYeTdqvbNlPPSt7-tur86YOFPwVyrivcHzgn7mQ62BQBkYmE2-OpgxRKcichFnXctl8zW4dvqnquuZXbgxvRN4UawoBoq72_jId9vFibw1tvFObqCmzbq9T58kxnfx3JGe2Cjz2RmsbrzLuSOzjn80NRR_KZIGvvck-6XV7rANRYDViyqmQBXDSPVvUt_ClWNc_KnZXLUJ6bjm2UEAw'); transition: transform 0.7s;">
+                        </div>
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'></svg>"
+                            class="w-100 opacity-0">
+                    </div>
+                </section>
+
+                <!-- Stats Section (Hidden on Desktop) -->
+                <section class="d-flex d-xl-none flex-nowrap overflow-x-auto no-scrollbar gap-3 px-4">
+                    <div class="d-flex flex-column flex-fill rounded-3 p-4 bg-card border border-card stats-card"
+                        style="min-width: 110px;">
+                        <p class="text-muted small text-uppercase fw-medium mb-2 tracking-wider"
+                            style="font-size: 0.75rem;">Projects</p>
+                        <p class="text-body fs-3 fw-bold m-0 lh-1">120+</p>
+                    </div>
+                    <div class="d-flex flex-column flex-fill rounded-3 p-4 bg-card border border-card stats-card"
+                        style="min-width: 110px;">
+                        <p class="text-muted small text-uppercase fw-medium mb-2 tracking-wider"
+                            style="font-size: 0.75rem;">Reach</p>
+                        <p class="text-body fs-3 fw-bold m-0 lh-1">50K+</p>
+                    </div>
+                    <div class="d-flex flex-column flex-fill rounded-3 p-4 bg-card border border-card stats-card"
+                        style="min-width: 110px;">
+                        <p class="text-muted small text-uppercase fw-medium mb-2 tracking-wider"
+                            style="font-size: 0.75rem;">Years</p>
+                        <p class="text-body fs-3 fw-bold m-0 lh-1">8+</p>
+                    </div>
+                </section>
+
+                <!-- Recent Stories / Selected Works Grid -->
+                <section class="px-4 px-xl-5">
+                    <div class="d-flex align-items-baseline justify-content-between mb-4">
+                        <h2 class="text-body fs-4 fs-xl-2 fw-bold m-0 d-md-none">Recent Stories</h2>
+                        <h2 class="text-body fs-3 fs-xl-2 fw-bold m-0 d-none d-md-block">Selected Works <span
+                                class="text-primary">.</span></h2>
+                        <div class="d-flex gap-3 align-items-center">
+                            <span class="d-none d-xl-block text-muted small fw-medium">01 — 06</span>
+                            <a class="text-primary text-decoration-none small fw-medium" href="#">View all</a>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Card 1 (Large on Desktop, square on Tablet, video on Mobile) -->
+                        <article class="col-12 col-xl-8">
+                            <div
+                                class="card border-0 rounded-4 overflow-hidden bg-card text-body shadow-sm story-card h-100">
+                                <div class="card-img-top bg-image-cover w-100 position-relative d-md-none d-xl-block aspect-video"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9tXGT9tBLWnRPeMA-p_5Iif7pQDtkBrEM37iHZ-wABokbwIso8AIODlQoLUBEgqq6anoSkcu8B3eccu3WWJUTdgk2__7_Bs-0voKnOsyvp7HGeO9n0UCNmN1MWv5L0x2rJdVBoL2hqgTCmUBAZxS8nBKY_1JPlk4ANL-byHE3N8eZuysxVlPRR3XcHWU7_5XFIjW0uUhWwHyBdQo2iKwqDo1YBCzJXfi0X9NmmErDTKd3ne6pkDftrDiTdPwm7o62pV3EhEFi3IE');">
+                                </div>
+                                <!-- Tablet specific aspect ratio -->
+                                <div class="card-img-top bg-image-cover w-100 position-relative d-none d-md-block d-xl-none aspect-portrait"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaK8Zy7ctlvO3kUEGJKZZily1-Y0ZhTo2mi2tv1BbBPGmd-IGNH8SFEk86dEgI2lrbRsjT64BZ58uHV87O2CKj9lMGRauZIEclraO0iHi41aVPgEBP2YHEwBzQ01o7CjzR8dKKQeP1Dm9XBaM20z5Oy6RaULEkOko4vMkJng9rgaVh71-BnxhczYwTmYVj8Jj4M6ASufibzeMzBpcr-f_wHJAbLrElcr9dFy2i5SZhqla1Yq7CI1_Ez3fIe1Xsd36KG3wxcuBKyVc');">
+                                    <div
+                                        class="position-absolute bottom-0 start-0 m-3 bg-dark bg-opacity-75 rounded px-2 py-1">
+                                        <span class="text-primary fw-bold text-uppercase tracking-widest"
+                                            style="font-size: 0.65rem;">Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-3 p-xl-4 d-xl-none">
+                                    <p class="text-primary fw-bold text-uppercase tracking-widest mb-1 d-md-none"
+                                        style="font-size: 0.75rem;">Architecture</p>
+                                    <h3 class="card-title fs-5 fw-bold m-0 mb-1">Minimalist Structures</h3>
+                                    <p class="card-text text-muted small m-0 line-clamp-2 d-md-none">Exploring the
+                                        intersection of brutalist design and modern sustainability in urban
+                                        environments.</p>
+                                    <p class="card-text text-muted small m-0 d-none d-md-block">New York, NY — 2023</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 1 Info (Desktop Only) -->
+                        <article class="col-xl-4 d-none d-xl-flex flex-column justify-content-center gap-3 ps-xl-4">
+                            <span class="text-primary fw-bold tracking-widest text-uppercase"
+                                style="font-size: 0.75rem;">Architecture Photography</span>
+                            <h4 class="fs-1 fw-bold lh-sm m-0">The Obsidian Monolith</h4>
+                            <p class="text-muted m-0">A deep dive into the light play of dark materials. Captured over
+                                three months in the heart of Berlin.</p>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="col-12 col-md-6 col-xl-6 mt-xl-5">
+                            <div
+                                class="card border-0 rounded-4 overflow-hidden bg-card text-body shadow-sm story-card h-100">
+                                <div class="card-img-top bg-image-cover aspect-video d-md-none d-xl-block w-100"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4YZFgY-B5399ldKXGUEi7sSOCXlePqPeA--H1MPzqibgyhtdvwQbM6Dpax3ESTj_FyaAY9EKqY5TNQBu3xdOwD2Oueq1JQj77DTmBlEDcXkfTsV4Z2sfRMt4UROXddpD1zPSUOc-nVe5nvuJD2NJy0Upu7F1nv2UKnPOI61y80VQGRqjrBW1Am5aQxVA385nYoTYxHiNkiNvgZF-zf00w-il0LKAQ_9Au_FSxY4JEoG0cVdomQucWiYELN7O67iokA4PaPR12-lg');">
+                                </div>
+                                <div class="card-img-top bg-image-cover aspect-portrait d-none d-md-block d-xl-none w-100 position-relative"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFPJ-T2LuEPRzY4-Y6TEixq_-TSsZngXg3UHTivAjxEl6ofAz5vGaPJin0Kr40cNmDosvJXa2GXeVLC1vi95F-WlN846L6jXj8J756Ze8lqmCfdF7c3P_GTlZiocqb61Lnf6dtiKAdPsa0XyNXa5aKRSvoHAPikFT4uecTS360gi82PLWZfMWoR2PEI6cZbTL9Q8YsqQ21VjCkJwXApCCPgiDOJx2uIQ4F8XM2Mfp5LGPVqlJf-5kBOgPyqqSm3EnLpBLUGpqnSoc');">
+                                    <div
+                                        class="position-absolute bottom-0 start-0 m-3 bg-dark bg-opacity-75 rounded px-2 py-1">
+                                        <span class="text-primary fw-bold text-uppercase tracking-widest"
+                                            style="font-size: 0.65rem;">Digital Design</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-3 p-xl-4 d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="text-primary fw-bold text-uppercase tracking-widest mb-1 d-md-none d-xl-block"
+                                            style="font-size: 0.75rem;">Digital Design</p>
+                                        <h3 class="card-title fs-5 fw-bold m-0 mb-1">Future Interfaces</h3>
+                                        <p class="card-text text-muted small m-0 line-clamp-2 d-md-none d-xl-block">A
+                                            conceptual deep-dive into the next generation of spatial computing.</p>
+                                        <p class="card-text text-muted small m-0 d-none d-md-block d-xl-none">Fintech
+                                            Solution — 2024</p>
+                                    </div>
+                                    <i class="bi bi-arrow-up-right fs-4 text-primary d-none d-xl-block"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="col-12 col-md-6 col-xl-6">
+                            <div
+                                class="card border-0 rounded-4 overflow-hidden bg-card text-body shadow-sm story-card h-100">
+                                <div class="card-img-top bg-image-cover aspect-video d-md-none d-xl-block w-100"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1-0CcDLJcTz-wPPDU-1NUfhztGef36tySiGwXIhk7djTe2HfwqPXX_dTy6NIwCUjHviup-9r9YLiKKdwzKGR6tKKVDYE-aBP-_nq_vvajS79rWgjnMuxX88Fvixq6v39Ud1FpXpbMFWNish9Fk-4m85rehI6SnHKS0oVbsqV-uGPUSyuoNrt2nRK3trtoAWnihDw5hLlCunG4WQMmB2E31NzSbhbgR0QOVodzlWnheEofZwfd88itrx8AtpGzO936JZoQBENtjnQ');">
+                                </div>
+                                <div class="card-img-top bg-image-cover aspect-portrait d-none d-md-block d-xl-none w-100 position-relative"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyR9vpIXeq6kS8MwoHr1Do_l22KADXqHGJSfidS_C2Wt1hOg7bONkAawIPFLlM42svxfxGk-FPJETVP_SLbIY4Wd8F5E_HGMH72aFX6eqhc6RE3F5DsF1YSEvdWsDodBbm-JAtIZDAJDm6J5sbPRylwukCjAyUCF0mOLawI_Elw25MxTsYQ0EaKtM-8uBw2Rcc0deUSIlLfdaX_0qXFLLolRTMrmsoJDIXvrWN3e1vKdwOpHBPZjIMQ1K41zDepXWm7gc42Hze5zk');">
+                                    <div
+                                        class="position-absolute bottom-0 start-0 m-3 bg-dark bg-opacity-75 rounded px-2 py-1">
+                                        <span class="text-primary fw-bold text-uppercase tracking-widest"
+                                            style="font-size: 0.65rem;">Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-3 p-xl-4 d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="text-primary fw-bold text-uppercase tracking-widest mb-1 d-md-none d-xl-block"
+                                            style="font-size: 0.75rem;">Branding</p>
+                                        <h3 class="card-title fs-5 fw-bold m-0 mb-1">Identity Systems</h3>
+                                        <p class="card-text text-muted small m-0 line-clamp-2 d-md-none d-xl-block">
+                                            Crafting cohesive visual languages for tech startups.</p>
+                                        <p class="card-text text-muted small m-0 d-none d-md-block d-xl-none">Berlin, DE
+                                            — 2022</p>
+                                    </div>
+                                    <i class="bi bi-arrow-up-right fs-4 text-primary d-none d-xl-block"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Desktop Footer Banner -->
+                <section
+                    class="d-none d-xl-flex p-5 mx-5 mt-5 bg-primary bg-opacity-10 rounded-4 border border-primary border-opacity-10 flex-column align-items-center text-center gap-4">
+                    <h2 class="fs-1 fw-black m-0">Let's build something <span
+                            class="text-primary fst-italic">permanent</span> together.</h2>
+                    <p class="text-muted fs-5 m-0" style="max-width: 600px;">Currently accepting new projects for Q3
+                        2024. Reach out for consultations on brand architecture.</p>
+                    <button class="btn btn-primary rounded-pill fw-bold px-5 py-3 tracking-widest text-dark mt-2"
+                        style="text-transform: uppercase;">Start a Conversation</button>
+                </section>
+
+            </div>
+
+            <!-- Mobile Bottom Navigation (< 768px). Outside the pb-5 flow to stay fixed -->
+            <nav class="d-md-none fixed-bottom bg-nav backdrop-blur border-top border-nav py-2 pb-3 shadow-lg z-3">
+                <div class="d-flex justify-content-between align-items-center mx-auto px-4" style="max-width: 400px;">
+                    <a class="text-primary text-decoration-none d-flex flex-column align-items-center gap-1 nav-item"
+                        href="#">
+                        <i class="bi bi-house-door-fill fs-4"></i>
+                        <span class="fw-bold text-uppercase tracking-tighter" style="font-size: 10px;">Home</span>
+                    </a>
+                    <a class="text-muted text-decoration-none d-flex flex-column align-items-center gap-1 nav-item"
+                        href="#">
+                        <i class="bi bi-grid-fill fs-4"></i>
+                        <span class="fw-bold text-uppercase tracking-tighter" style="font-size: 10px;">Works</span>
+                    </a>
+                    <a class="text-muted text-decoration-none d-flex flex-column align-items-center gap-1 nav-item"
+                        href="#">
+                        <i class="bi bi-person-fill fs-4"></i>
+                        <span class="fw-bold text-uppercase tracking-tighter" style="font-size: 10px;">About</span>
+                    </a>
+                    <a class="text-muted text-decoration-none d-flex flex-column align-items-center gap-1 nav-item"
+                        href="#">
+                        <i class="bi bi-envelope-fill fs-4"></i>
+                        <span class="fw-bold text-uppercase tracking-tighter" style="font-size: 10px;">Inbox</span>
+                    </a>
+                </div>
+            </nav>
+
+        </main>
+    </div>
+</body>
+
+</html>

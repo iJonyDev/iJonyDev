@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4a373",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#121212",
+                        "neutral-dark": "#1e1e1e",
+                        "surface-dark": "#2a2622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d4a373;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <div class="flex h-screen overflow-hidden max-w-[768px] mx-auto border-x border-primary/10 shadow-2xl">
+        <!-- Sidebar Navigation (Tablet optimized) -->
+        <aside
+            class="w-64 flex-shrink-0 bg-neutral-dark dark:bg-background-dark border-r border-primary/10 flex flex-col justify-between p-6">
+            <div class="flex flex-col gap-8">
+                <!-- Profile Section -->
+                <div class="flex flex-col gap-4">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-primary/20 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                        </div>
+                        <div class="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/30">
+                            <img alt="Professional portrait of Elena Sol" class="w-full h-full object-cover"
+                                data-alt="Professional portrait of a female architect"
+                                src="docs/FotoPerfil.png" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-xl font-bold tracking-tight text-slate-100">Elena Sol</h1>
+                        <p class="text-xs text-primary font-medium uppercase tracking-widest">Architect &amp; Designer
+                        </p>
+                    </div>
+                </div>
+                <!-- Navigation Links -->
+                <nav class="flex flex-col gap-2">
+                    <a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20"
+                        href="#">
+                        <span class="material-symbols-outlined text-[20px]">dashboard</span>
+                        <span class="text-sm font-semibold">Projects</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined text-[20px]">person</span>
+                        <span class="text-sm font-medium">About</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined text-[20px]">architecture</span>
+                        <span class="text-sm font-medium">Process</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                        <span class="text-sm font-medium">Contact</span>
+                    </a>
+                </nav>
+            </div>
+            <!-- CTA Section -->
+            <div class="flex flex-col gap-4">
+                <div class="p-4 rounded-xl bg-surface-dark border border-primary/10">
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3">Available for high-impact design
+                        collaborations.</p>
+                    <button
+                        class="w-full bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold py-2.5 rounded-lg transition-colors shadow-lg shadow-primary/10 flex items-center justify-center gap-2">
+                        <span>Hire Me</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto custom-scrollbar bg-background-dark">
+            <!-- Header section -->
+            <header class="p-8 pb-4">
+                <h2 class="text-4xl font-black text-slate-100 tracking-tighter mb-2">Portfolio</h2>
+                <p class="text-slate-400 text-sm max-w-md leading-relaxed">
+                    A curated collection of minimalist architecture, innovative digital interfaces, and strategic brand
+                    identities.
+                </p>
+            </header>
+            <!-- Filters -->
+            <div class="px-8 mb-6 overflow-x-auto no-scrollbar">
+                <div class="flex gap-6 border-b border-white/5">
+                    <button class="pb-4 text-sm font-bold text-primary border-b-2 border-primary">All Works</button>
+                    <button
+                        class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-300 transition-colors">Architecture</button>
+                    <button
+                        class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-300 transition-colors">Digital
+                        Design</button>
+                    <button
+                        class="pb-4 text-sm font-medium text-slate-500 hover:text-slate-300 transition-colors">Branding</button>
+                </div>
+            </div>
+            <!-- Projects Grid (Tablet 2-column layout) -->
+            <div class="px-8 grid grid-cols-2 gap-6 pb-12">
+                <!-- Project Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-3">
+                        <img alt="Metropolitan Museum Extension"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                            data-alt="Modern concrete architecture museum design"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaK8Zy7ctlvO3kUEGJKZZily1-Y0ZhTo2mi2tv1BbBPGmd-IGNH8SFEk86dEgI2lrbRsjT64BZ58uHV87O2CKj9lMGRauZIEclraO0iHi41aVPgEBP2YHEwBzQ01o7CjzR8dKKQeP1Dm9XBaM20z5Oy6RaULEkOko4vMkJng9rgaVh71-BnxhczYwTmYVj8Jj4M6ASufibzeMzBpcr-f_wHJAbLrElcr9dFy2i5SZhqla1Yq7CI1_Ez3fIe1Xsd36KG3wxcuBKyVc" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="text-[10px] uppercase tracking-widest text-primary font-bold bg-background-dark/80 px-2 py-1 rounded">Architecture</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="text-slate-100 font-bold text-base leading-tight group-hover:text-primary transition-colors">
+                        Metropolitan Museum Extension</h3>
+                    <p class="text-slate-500 text-xs mt-1">New York, NY — 2023</p>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-3">
+                        <img alt="Nexus Digital Interface"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                            data-alt="Clean mobile application UI design"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFPJ-T2LuEPRzY4-Y6TEixq_-TSsZngXg3UHTivAjxEl6ofAz5vGaPJin0Kr40cNmDosvJXa2GXeVLC1vi95F-WlN846L6jXj8J756Ze8lqmCfdF7c3P_GTlZiocqb61Lnf6dtiKAdPsa0XyNXa5aKRSvoHAPikFT4uecTS360gi82PLWZfMWoR2PEI6cZbTL9Q8YsqQ21VjCkJwXApCCPgiDOJx2uIQ4F8XM2Mfp5LGPVqlJf-5kBOgPyqqSm3EnLpBLUGpqnSoc" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="text-[10px] uppercase tracking-widest text-primary font-bold bg-background-dark/80 px-2 py-1 rounded">Digital
+                                Design</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="text-slate-100 font-bold text-base leading-tight group-hover:text-primary transition-colors">
+                        Nexus Interface</h3>
+                    <p class="text-slate-500 text-xs mt-1">Fintech Solution — 2024</p>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-3">
+                        <img alt="Sustainable Urban Living"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                            data-alt="Eco-friendly residential apartment complex"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyR9vpIXeq6kS8MwoHr1Do_l22KADXqHGJSfidS_C2Wt1hOg7bONkAawIPFLlM42svxfxGk-FPJETVP_SLbIY4Wd8F5E_HGMH72aFX6eqhc6RE3F5DsF1YSEvdWsDodBbm-JAtIZDAJDm6J5sbPRylwukCjAyUCF0mOLawI_Elw25MxTsYQ0EaKtM-8uBw2Rcc0deUSIlLfdaX_0qXFLLolRTMrmsoJDIXvrWN3e1vKdwOpHBPZjIMQ1K41zDepXWm7gc42Hze5zk" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="text-[10px] uppercase tracking-widest text-primary font-bold bg-background-dark/80 px-2 py-1 rounded">Architecture</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="text-slate-100 font-bold text-base leading-tight group-hover:text-primary transition-colors">
+                        Eco-Residencies</h3>
+                    <p class="text-slate-500 text-xs mt-1">Berlin, DE — 2022</p>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-3">
+                        <img alt="Minimalist Branding Lab"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                            data-alt="Minimalist logo design and brand board"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_soIr6ADwqy1o8-sQK54yrqDQmFDueL9myFyhWJ9hBsGqjLr9NohkiuFqHCI_CcwnNr9pIff5BkqZeBlwuWULpsuGjWkuqnClxQxYzG8-iwcuNT26hTp2NPmT3ctmOUw3g5TOD3S4m8bA7iqv5Y74wK5h4L9gnLxaKHV4XiTmaVjWUq7_Q-zRJsP9DEkE7kLpAAkO4FXKEio9LDvlchkUXsJDTVMnhbtoqzLCJ3LzixZYrhQOUZGCgaIw8I4fIiyEgxN2iJQ3LAw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="text-[10px] uppercase tracking-widest text-primary font-bold bg-background-dark/80 px-2 py-1 rounded">Branding</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="text-slate-100 font-bold text-base leading-tight group-hover:text-primary transition-colors">
+                        Aura Skincare</h3>
+                    <p class="text-slate-500 text-xs mt-1">Visual Identity — 2023</p>
+                </div>
+            </div>
+            <!-- Recognition Section -->
+            <section class="px-8 pb-12">
+                <h3 class="text-lg font-bold text-slate-100 mb-6 flex items-center gap-2">
+                    <span class="w-8 h-[1px] bg-primary"></span>
+                    Experience &amp; Recognition
+                </h3>
+                <div class="space-y-4">
+                    <div
+                        class="flex justify-between items-center p-4 rounded-xl bg-neutral-dark/50 border border-white/5 hover:border-primary/20 transition-all">
+                        <div>
+                            <p class="text-slate-100 font-semibold">Senior Architectural Lead</p>
+                            <p class="text-slate-500 text-xs italic">Foster + Partners · 2020 — Present</p>
+                        </div>
+                        <div class="text-primary material-symbols-outlined">north_east</div>
+                    </div>
+                    <div
+                        class="flex justify-between items-center p-4 rounded-xl bg-neutral-dark/50 border border-white/5 hover:border-primary/20 transition-all">
+                        <div>
+                            <p class="text-slate-100 font-semibold">Pritzker Architecture Prize Finalist</p>
+                            <p class="text-slate-500 text-xs italic">Under 30 Excellence · 2023</p>
+                        </div>
+                        <div class="text-primary material-symbols-outlined">emoji_events</div>
+                    </div>
+                    <div
+                        class="flex justify-between items-center p-4 rounded-xl bg-neutral-dark/50 border border-white/5 hover:border-primary/20 transition-all">
+                        <div>
+                            <p class="text-slate-100 font-semibold">Red Dot Design Award</p>
+                            <p class="text-slate-500 text-xs italic">Digital Experience Category · 2022</p>
+                        </div>
+                        <div class="text-primary material-symbols-outlined">star</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
